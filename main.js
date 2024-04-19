@@ -6,7 +6,6 @@ const fetchCharacters = async (url) => {
     try {
     const response = await fetch(url);
     if (response.ok) {
-        console.log(response);
         try {
             const jsonData = await response.json();
             jsonData.results.forEach(character => {
@@ -23,5 +22,4 @@ const fetchCharacters = async (url) => {
         console.log(error);
     }
 }
-console.log('hi');
 fetchCharacters(url);
