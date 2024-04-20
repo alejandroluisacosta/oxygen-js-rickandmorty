@@ -1,3 +1,5 @@
+import Character from "./character.js";
+
 const characters = [];
 
 const url = "https://rickandmortyapi.com/api/character";
@@ -9,7 +11,8 @@ const fetchCharacters = async (url) => {
         try {
             const jsonData = await response.json();
             jsonData.results.forEach(character => {
-                characters.push(character);
+                const newCharacter = new Character(character.episode, character.gender, character.id, character.image, character.location, character.name, character.origin, character.species, character.status, character.url);
+                characters.push(newCharacter);
             })
             console.log(characters);
         }
