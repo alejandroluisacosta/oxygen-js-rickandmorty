@@ -1,6 +1,7 @@
 import Character from "./character.js";
+import renderCharacterInHTML from "./renderCharacterInHTML.js";
 
-const characters = [];
+export const characters = [];
 
 const url = "https://rickandmortyapi.com/api/character";
 
@@ -15,6 +16,7 @@ const fetchCharacters = async (url) => {
                 characters.push(newCharacter);
             })
             console.log(characters);
+            renderCharacterInHTML(characters);
         }
         catch(error) {
             console.log(error);
