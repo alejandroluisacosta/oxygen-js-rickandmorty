@@ -37,11 +37,26 @@ const renderCharacterInHTML = (characterArray) => {
         name.innerText = character.name;
         name.classList.add('grid__article__info__name');
         
+
         
+        const descriptionContainer = document.createElement("div");
+        descriptionContainer.classList.add("grid__article__info__description-container");
+
+        const status = document.createElement("span");
+        status.innerHTML = 'radio_button_checked';
+        status.classList.add('material-symbols-outlined');
+        status.classList.add('grid__article__info__status');
+        if (character.status === 'Alive')
+            status.classList.add('grid__article__info__status--alive');
+        else
+            status.classList.add('grid__article__info__status--dead');
 
         const description = document.createElement("p");
         description.classList.add('grid__article__info__description');
         description.innerText = `${character.status} - ${character.species}`;
+
+        descriptionContainer.appendChild(status);
+        descriptionContainer.appendChild(description);
 
 
 
@@ -80,9 +95,10 @@ const renderCharacterInHTML = (characterArray) => {
         article.appendChild(image);
         article.appendChild(infoDiv);
         infoDiv.appendChild(name);
-        infoDiv.appendChild(description);
+        infoDiv.appendChild(descriptionContainer)
         infoDiv.appendChild(locationContainer);
         infoDiv.appendChild(episodeContainer);
+        
 
     })
 }

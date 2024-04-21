@@ -14,19 +14,40 @@ html
         border-radius: 0.5rem
         &__info
             margin-left: 1rem
-            font-family: 'Helvetica Neue'
-            font-size: 0.89rem
-            font-weight: 500
+            font-family: -apple-system,'BlinkMacSystemFont', 'Segoe UI'
+            font-size: 20px
+            font-weight: normal
             &__name
-                font-size: 1.5rem
+                font-size: 1.9rem
                 font-weight: 800
                 margin-bottom: 0
+            &__status
+                margin-top: 0.2rem
+                margin-right: 0.5rem
+                display: inline
+                &--alive
+                    color: green
+                &--dead
+                    color: red
             &__description
-                margin-top: 0.5rem
+                display: inline
+                transform: translateY(-50%)
             &__location
                 margin-top: 2rem
+                &__title
+                    color: rgb(158, 158, 158)
+                    margin-bottom: 0
+                &__value
+                    margin-top: 0.5rem
+                    color: rgb(245, 245, 245)
             &__episode
                 margin-top: 2rem
+                &__title
+                    color: rgb(158, 158, 158)
+                    margin-bottom: 0
+                &__value
+                    margin-top: 0.5rem
+                    color: rgb(245, 245, 245)
 
 @media only screen and (max-width: 1000px)
     .grid

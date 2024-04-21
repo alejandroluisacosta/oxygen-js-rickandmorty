@@ -16,23 +16,51 @@ html {
 }
 .grid__article__info {
   margin-left: 1rem;
-  font-family: "Helvetica Neue";
-  font-size: 0.89rem;
-  font-weight: 500;
+  font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI";
+  font-size: 20px;
+  font-weight: normal;
 }
 .grid__article__info__name {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   font-weight: 800;
   margin-bottom: 0;
 }
+.grid__article__info__status {
+  margin-top: 0.2rem;
+  margin-right: 0.5rem;
+  display: inline;
+}
+.grid__article__info__status--alive {
+  color: green;
+}
+.grid__article__info__status--dead {
+  color: red;
+}
 .grid__article__info__description {
-  margin-top: 0.5rem;
+  display: inline;
+  transform: translateY(-50%);
 }
 .grid__article__info__location {
   margin-top: 2rem;
 }
+.grid__article__info__location__title {
+  color: rgb(158, 158, 158);
+  margin-bottom: 0;
+}
+.grid__article__info__location__value {
+  margin-top: 0.5rem;
+  color: rgb(245, 245, 245);
+}
 .grid__article__info__episode {
   margin-top: 2rem;
+}
+.grid__article__info__episode__title {
+  color: rgb(158, 158, 158);
+  margin-bottom: 0;
+}
+.grid__article__info__episode__value {
+  margin-top: 0.5rem;
+  color: rgb(245, 245, 245);
 }
 
 @media only screen and (max-width: 1000px) {
