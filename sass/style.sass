@@ -4,36 +4,43 @@ html
 
 .grid 
     display: grid
-    grid-template-columns: repeat(3, 1fr)
+    grid-template-columns: repeat(2, 1fr)
     gap: 20px
     background-color: rgb(39, 43, 51)
+    padding-left: 10%
+    padding-right: 10%
     &__article
         display: flex
         color: white
         background-color: rgb(60, 62, 68)
         border-radius: 0.5rem
+        &__image
+            width: 230px
+            height: 220px
         &__info
             margin-left: 1rem
             font-family: -apple-system,'BlinkMacSystemFont', 'Segoe UI'
-            font-size: 20px
+            font-size: 0.89rem
             font-weight: normal
             &__name
                 font-size: 1.9rem
                 font-weight: 800
+                margin-top: 1rem
                 margin-bottom: 0
             &__description-container
                 display: flex
+                align-items: center
+                margin-top: 0.3rem
                 &__status
-                    margin-top: 0.2rem
-                    margin-right: 0.5rem
+                    margin-right: 0.3rem
                     &--alive
                         color: green
                     &--dead
                         color: red
                 &__description
-                    transform: translateY(-50%)
+                    margin: 0
             &__location
-                margin-top: 2rem
+                margin-top: 1.5rem
                 &__title
                     color: rgb(158, 158, 158)
                     margin-bottom: 0
@@ -41,7 +48,7 @@ html
                     margin-top: 0.5rem
                     color: rgb(245, 245, 245)
             &__episode
-                margin-top: 2rem
+                margin-top: 1.5rem
                 &__title
                     color: rgb(158, 158, 158)
                     margin-bottom: 0
