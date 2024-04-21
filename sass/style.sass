@@ -21,17 +21,17 @@ html
                 font-size: 1.9rem
                 font-weight: 800
                 margin-bottom: 0
-            &__status
-                margin-top: 0.2rem
-                margin-right: 0.5rem
-                display: inline
-                &--alive
-                    color: green
-                &--dead
-                    color: red
-            &__description
-                display: inline
-                transform: translateY(-50%)
+            &__description-container
+                display: flex
+                &__status
+                    margin-top: 0.2rem
+                    margin-right: 0.5rem
+                    &--alive
+                        color: green
+                    &--dead
+                        color: red
+                &__description
+                    transform: translateY(-50%)
             &__location
                 margin-top: 2rem
                 &__title

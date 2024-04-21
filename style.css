@@ -25,19 +25,20 @@ html {
   font-weight: 800;
   margin-bottom: 0;
 }
-.grid__article__info__status {
+.grid__article__info__description-container {
+  display: flex;
+}
+.grid__article__info__description-container__status {
   margin-top: 0.2rem;
   margin-right: 0.5rem;
-  display: inline;
 }
-.grid__article__info__status--alive {
+.grid__article__info__description-container__status--alive {
   color: green;
 }
-.grid__article__info__status--dead {
+.grid__article__info__description-container__status--dead {
   color: red;
 }
-.grid__article__info__description {
-  display: inline;
+.grid__article__info__description-container__description {
   transform: translateY(-50%);
 }
 .grid__article__info__location {
