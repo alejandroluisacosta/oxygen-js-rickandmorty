@@ -1,9 +1,44 @@
-#characters-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+html {
+  font-size: 18px;
 }
 
-article {
-    display: flex;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  background-color: rgb(39, 43, 51);
 }
+.grid__article {
+  display: flex;
+  color: white;
+  background-color: rgb(60, 62, 68);
+  border-radius: 0.5rem;
+}
+.grid__article__info {
+  margin-left: 1rem;
+  font-family: "Helvetica Neue";
+  font-size: 0.89rem;
+  font-weight: 500;
+}
+.grid__article__info__name {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+.grid__article__info__description {
+  margin-top: 0.5rem;
+}
+.grid__article__info__location {
+  margin-top: 2rem;
+}
+.grid__article__info__episode {
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
