@@ -104,3 +104,5 @@ const renderCharacterInHTML = (characterArray) => {
 }
 
 export default renderCharacterInHTML;
+
+// Comments
